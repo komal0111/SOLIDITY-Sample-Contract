@@ -40,7 +40,7 @@ contract Types
         return x;  
     }
     
-    // Defining the function to find position of the element3 of the array 
+    // Defining the function to find position of the element 0 of the array 
     
     function array_element(   ) public view returns (uint)
     {   

@@ -3,12 +3,12 @@ pragma solidity ^0.5.0;
 
 // Creating a contract 
 
-contract Types 
+contract Array_Operation_numeric 
 { 
 
 	// Defining the array 
 	
-	uint[] data = [101, 210, 130, 140, 125]; 
+	uint[] arr_element = [101, 210, 130, 140, 125]; 
 	
 	// Array index start at zero
 	
@@ -17,34 +17,34 @@ contract Types
 	function array_push( 	) public returns(uint[] memory)
 	{ 
 	
-		data.push(215); 
-		data.push(270); 
-		data.push(801); 
+		arr_element.push(215); 
+		arr_element.push(270); 
+		arr_element.push(801); 
 	
-		return data; 
+		return arr_element; 
 	}
 	
 	// Defining the function to pop values to the array 
 	
 	function array_pop(   ) public returns(uint[] memory)
 	{   
-        data.pop();  
-        return data;   
+        arr_element.pop();  
+        return arr_element;   
     }  
     
     // Defining the function to find length of array values 
     
     function array_length(  ) public view returns(uint)
     {   
-        uint x = data.length; 
-        return x;  
+        uint len = arr_element.length; 
+        return len;  
     }
     
     // Defining the function to find position of the element 0 of the array 
     
     function array_element(   ) public view returns (uint)
     {   
-        uint x = data[0]; 
-        return x;   
+        uint position = arr_element[0]; 
+        return position;   
    }   
 }
